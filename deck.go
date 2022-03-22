@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
-
+import (
+	"fmt"
+	"strings"
+)
 type deck []string;
 
 func newDeck() deck {
@@ -25,4 +27,8 @@ func (d deck) print() {
 
 func deal(d deck, hansSize int) (deck, deck) {
   return d[:hansSize], d[hansSize:]
+}
+
+func (d deck) toString() string {
+  return strings.Join([]string(d), ",")
 }
