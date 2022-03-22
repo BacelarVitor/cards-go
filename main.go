@@ -1,7 +1,7 @@
 package main
 
-import "fmt"
-
 func main() {
-	fmt.Println("Fon");
+	cards := newDeck()
+
+	cards.Print()
 }
