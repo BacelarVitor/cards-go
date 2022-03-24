@@ -38,7 +38,7 @@ func TestSaveToFileAndNewDeckFromFile(t *testing.T) {
 	os.Remove(n)
 
 	d := newDeck()
-	d.saveToFile(n+"f")
+	d.saveToFile(n)
 
 	nd := newDeckFromFile(n)
 	if len(nd) != 52 {
